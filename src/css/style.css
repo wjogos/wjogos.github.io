@@ -1,0 +1,93 @@
+/* style.css */
+
+/* Variáveis de Cores */
+:root {
+    --cor-primaria: #3498db;
+    --cor-secundaria: #f3f7f5;
+    --cor-texto: #ffffff;
+    --cor-fundo: #000000;
+}
+
+/* Estilo Geral */
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Poppins', sans-serif; /* Atualizado para usar Poppins */
+}
+
+.container {
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--cor-primaria);
+}
+
+a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Página Inicial */
+.card {
+    background-color: var(--cor-secundaria);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+.embed-responsive::before {
+    content: "";
+    display: block;
+    padding-top: 166.67%; /* 16:9 aspect ratio (9/16 = 0.5625 * 100 = 56.25%) */
+}
+.embed-responsive .embed-responsive-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+ .btn-capsule {
+    margin-left: 10px;
+  }
+  .btn-circle {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 40px;
+  }
+  .btn-capsule {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 40px;
+  }
+  .btn-capsule:hover, .btn-capsule.active, .btn-circle:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
